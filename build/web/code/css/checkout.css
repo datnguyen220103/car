@@ -1,0 +1,162 @@
+
+.banners{
+    background-image: url(../../img/background-about-us.jpg);
+    height: 26.875rem;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:fixed;
+}
+.banners .container{
+    display: table;
+    height: 100%;
+    position: relative;
+}
+.banners .row{
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 30px;
+}
+.banners h1{
+    bottom: 0;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.banners a{
+    font-size: 1rem;
+    color: var(--red);
+}
+.banners p{
+    font-size: 1rem;
+    color: var(--gray);
+}
+.banners::before{
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 26.875rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.customercart {
+    padding: 80px 0;
+}
+
+.customer-information {
+    width: 100%;
+}
+
+.customer-information h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.customer-information .input-text {
+    width: 100%;
+    border: 1px solid var(--gray-2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.customer-information .input-text::placeholder {
+    color: var(--red);
+}
+
+.customer-cart-right {
+
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+.customer-cart-right p {
+    font-size: 15px;
+    color: var(--gray);
+    margin-bottom: 8px;
+}
+
+.customer-cart-right .input-text {
+    width: 100%;
+    border: 1px solid var(--gray-2);
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.oder-list{
+    border:1px solid var(--gray-2) ;
+    border-radius: 3px;
+}
+.oder-item{
+    display: flex;
+    padding: 0.7rem 0;
+    border-bottom:1px solid var(--gray-2) ;
+}
+.oder-item .col-6{
+    color: var(--gray);
+}
+.oder-item-important{
+    font-weight: 700;
+}
+.col-6{
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.payment{
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #ebe9eb;
+}
+.payment:first-child >p{
+    color: var(--gray);
+    padding: 1rem 0;
+}
+.payment-box{
+    position: relative;
+    background-color: #dfdcde;
+}
+.payment-box span{
+    
+    display: block;
+    padding: 1rem 0.5rem;
+    color: var(--gray);
+}
+.payment-oder{
+    padding: 1rem 0 0 0;
+}
+.payment-oder a{
+    color: var(--black);
+}
+.payment-oder button{
+    margin-top: 2rem;
+    padding: 0.3rem 1rem ;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*.payment-oder button .btn-oder {
+    color: var(--white) !important;
+    display: block;
+    width: 100%;
+    height: 100%      
+}*/
+@media (min-width:768px) {
+    .text-md-left {
+        text-align: left;
+    }
+    .text-md-right {
+        text-align: right;
+    }
+}

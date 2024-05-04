@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body class="body">
+    <div class="loadding">
+        <img src="../../img/loader.gif" alt="">
+    </div> 
+    <header id="header" class="header">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="topbar-left text-center text-lg-left">
+                            <ul class="list-inline">
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    contact@demo.com
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Số 666 Nguyễn Chí Thanh, Hà Lội
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="topbar-right text-center text-lg-right">
+                            <ul class="list-inline">
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <a href="#">
+                                        0123 456 789
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topnav">
+            <div id="mega-menu">
+                <div class="menu-list-items">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="menu-logo">
+                                    <li>
+                                        <a href="../../index.html">
+                                            <img src="../../img/DV13.png" alt="">
+                                        </a>
+                                        <div class="menu-mobile">
+                                            <span><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="menu-link">
+                                    <li>
+                                        <a href="../../index.html">
+                                            trang chủ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/DV13-gioithieu.html">
+                                            giới thiệu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            sản phẩm
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../HTML/DV13-tintuc1.html">
+                                            tin tức
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            liên hệ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banners">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6 text-md-left">
+                        <h1>cart</h1>
+                    </div>
+                    <div class="col-md-6 text-md-right float-right">
+                        <ul>
+                            <p class="breadcrumbs">
+                                <a href="#">Home</a>
+                                >>
+                                <span>Cart</span>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <<form action="../database/check.jsp">
+            <div class="customercart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="customer-information">
+                            <h2>THÔNG TIN THANH TOÁN</h2>
+                            <input class="input-text" name="name" type="text" placeholder="Họ và tên">
+                            <input class="input-text" name="address" type="text" placeholder="Địa chỉ">
+                            <input class="input-text" name="phone" type="text" placeholder="Điện thoại">
+                            <input class="input-text" name="email" type="text" placeholder="Địa chỉ email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="customer-cart-right">
+                            <h2>THÔNG TIN BỔ SUNG</h2>
+                            <P>Ghi chú đơn hàng (tuỳ chọn)</P>
+                            <textarea name="note" class="input-text" id="order_comments"
+                                placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."
+                                rows="3" cols="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="customer-oder">
+                            <h2>Đơn hàng của bạn</h2>
+                            <div id="cartItems" class="oder-list">
+                                <div class="oder-item ">
+                                    <div class="col-6 oder-item-important product">
+                                        Sản phẩm
+                                    </div>
+                                    <div class="col-6 oder-item-important number">
+                                        Tạm tính
+                                    </div>
+                                </div>
+                                <div class="oder-item">
+                                    <input class="col-6 name-product" placeholder="Ferrari">
+                                    </input>
+                                    <input class="col-6 sale-product" placeholder="900000">
+                                    </input>
+                                </div>
+                                <div class="oder-item">
+                                    <div class="col-6 oder-item-important sum">
+                                        Tổng
+                                    </div>
+                                    <input class="col-6 sum-product" placeholder="90000">
+                                    
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="payment">
+                            <div class="payment-methods">
+                                <p>Trả tiền mặt khi nhận hàng</p>
+                                <div class="payment-box">
+                                    <span>Trả tiền mặt khi giao hàng</span>
+                                </div> 
+                            </div>
+                            <div class="payment-oder">
+                                <p>
+                                    Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our 
+                                    <a href="#">
+                                        chính sách riêng tư.
+                                    </a>
+                                    <button><a id="btn-oder" class="btn-oder" style="color: var(--white)">Đặt hàng</a></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="social">
+                        <ul>
+                            <li class="col-xl-6" style="width: 25%;">
+                                <a class="facebook" href="#">
+                                    facebook
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="col-xl-6" style="width: 25%;">
+                                <a class="twitter" href="#">
+                                    twitter
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="col-xl-6" style="width: 25%;">
+                                <a class="youtube" href="#">
+                                    youtube
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="col-xl-6" style="width: 25%;">
+                                <a class="instagram" href="#">
+                                    instagram
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="about-content">
+                            <img class="img-fluid" src="../../img/DV13.png" alt="">
+                            <p>
+                                DV13 có cung cấp cho quý khách dịch vụ test xe ô tô cũ uy tín và chất lượng trên toàn
+                                quốc Một hôm lang thang trên mạng và may mắn bắt gặp một chiếc xe cũ đúng loại mình đang
+                                tìm kiếm, nhìn ngoại
+                            </p>
+                        </div>
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-building"></i>
+                                    <span>
+                                        CÔNG TY TNHH 1 THÀNH VIÊN
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>
+                                        Số 123 Đường Phan Chu Trinh, Quận 10, TP.HCM
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>
+                                        0123 456 789
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>
+                                        contact@demo.com
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="usefull-link">
+                            <h6 class="tx-white">
+                                liên kết web
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Sản phẩm
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="post-block">
+                            <h6 class="tx-white">
+                                tin mới nhất
+                            </h6>
+                            <ul>
+                                <li>
+                                    <div class="post-block-item">
+                                        <div class="post-block-thumb">
+                                            <img src="../../img/car-3-1.jpg" alt="">
+                                        </div>
+                                        <div class="post-block-content">
+                                            <a href="#">
+                                                Lexus – thể hiện độ sang trọng
+                                            </a>
+                                            <span>
+                                                <i class="fas fa-calendar-alt"></i>
+                                                03 Th4 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-block-item">
+                                        <div class="post-block-thumb">
+                                            <img src="../../img/car-1.jpg" alt="">
+                                        </div>
+                                        <div class="post-block-content">
+                                            <a href="#">
+                                                Lambogini – thương hiệu nổi tiếng
+                                            </a>
+                                            <span>
+                                                <i class="fas fa-calendar-alt"></i>
+                                                03 Th4 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-block-item">
+                                        <div class="post-block-thumb">
+                                            <img src="../../img/porsche-911.jpg" alt="">
+                                        </div>
+                                        <div class="post-block-content">
+                                            <a href="#">
+                                                Porsche 911 – chất kích thích cho nhà giàu Việt
+                                            </a>
+                                            <span>
+                                                <i class="fas fa-calendar-alt"></i>
+                                                03 Th4 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div id="fb-root"></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/datfitnesss/" data-tabs=""
+                            data-width="500" data-height="300" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/datfitnesss/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/datfitnesss/">Dat Fitness</a>
+                            </blockquote>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="text-lg-left text-center">
+                                <span>
+                                    Copyright © 2023 DV13
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <ul class="list-inline text-lg-right text-center">
+                                <li>
+                                    <a href="#">
+                                        Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Các điều khoản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/f8392308c6.js" crossorigin="anonymous"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v12.0" nonce="xW2W2s6V"></script>
+    <script src="../js/loadding.js"></script>
+    <script src="../js/back-to-top.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/checkout.js"></script>
+</body>
+
+</html>
